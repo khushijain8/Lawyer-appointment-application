@@ -1,0 +1,41 @@
+.lawyer-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin:15px;
+
+}
+.lawyer-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 650px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    align-items:center
+}
+.lawyer-card:hover {
+    transform: translateY(-5px);
+}
+
+.lawyer-card h3 {
+    color: #2a3d5c;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.lawyer-card ul {
+    padding-left: 20px;
+}
+
+.lawyer-card p {
+    font-size: 14px;
+    color: #777;
+}
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #2a3d5c;
+    margin-bottom: 20px; 
+}

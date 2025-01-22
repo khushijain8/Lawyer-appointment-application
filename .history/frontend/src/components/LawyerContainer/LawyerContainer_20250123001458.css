@@ -1,0 +1,5 @@
+.parent-div{
+    display: flex,
+    flexWrap: wrap,
+    gap: 20px 
+}
