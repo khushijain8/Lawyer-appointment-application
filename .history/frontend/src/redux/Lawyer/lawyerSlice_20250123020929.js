@@ -30,7 +30,7 @@ export const bookSlot = createAsyncThunk("Lawyer/bookSlot", async (_, { getState
         return rejectWithValue("Invalid slot or lawyerId");
     }
     try {
-      const response = await axios.post("https://lawyer-appointment-application.vercel.app/bookSlot", {
+      const response = await axios.post("https://lawyer-appointment-application.vercel.app//bookSlot", {
         lawyerId,
         slotIndex,
       });
