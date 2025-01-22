@@ -6,7 +6,6 @@ import {Login} from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import Book from './components/Book/Book';
 import Admin from './components/Admin/Admin'
-import FrontPage from './components/FrontPage/FrontPage';
 function App() {
   return (
     <>

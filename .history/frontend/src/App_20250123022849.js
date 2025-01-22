@@ -6,7 +6,6 @@ import {Login} from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import Book from './components/Book/Book';
 import Admin from './components/Admin/Admin'
-import FrontPage from './components/FrontPage/FrontPage';
 function App() {
   return (
     <>
@@ -15,7 +14,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/book' element={<Book/>}/>
-        <Route path='/' element={<FrontPage/>}/>
+        <Route path='/' element={<Admin/>}/>
         <Route path='/admin' element={<Admin/>}/>
       </Routes> 
     
