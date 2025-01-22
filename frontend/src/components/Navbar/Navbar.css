@@ -2,19 +2,23 @@
     width:45px;
     height:45px;
 }
+.navbar{
+    margin:10px;
+    display:flex;
+    justify-content : space-between;
+}
 .left-nav{
     display: flex;
     justify-content: start;
     gap:15px;
     align-items:center; /* for heading (lawengage to be at the center of the logo)*/
 }
-
-.navbar{
-    margin:10px;
-    display:flex;
-    justify-content : space-between;
-    align-items:center;
+.mid-nav{
+    margin-top:6px;
 }
+.right-nav{
+    margin-top:6px;
+} 
 .heading{
     font-size: 1.4rem; 
     font-weight: normal;
