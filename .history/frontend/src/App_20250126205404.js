@@ -9,7 +9,7 @@ import Admin from './components/Admin/Admin';
 import FrontPage from './components/FrontPage/FrontPage';
 import Firm from './components/Firms/Firm';
 import LawyerHistoryContainer from './components/LawyerHistoryContainer/LawyerHistoryContainer';
-
+import Detail from './components/Detail';
 function App() {
   return (
     <>
@@ -22,7 +22,7 @@ function App() {
         <Route path='/admin' element={<Admin/>}/>
         <Route path='/firm' element={<Firm/>}/>
         <Route path='/admin/firm' element={<LawyerHistoryContainer/>}/>
-        
+        <Route path='/lawyerdetails' element={<Detail/>}/>
       </Routes> 
     
     </>

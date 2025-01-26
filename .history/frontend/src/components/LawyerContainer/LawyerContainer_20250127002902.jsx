@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { fetchLawyers,bookSlot,selectSlot } from '../../redux/Lawyer/lawyerSlice'
 import { useDispatch ,useSelector} from 'react-redux'
 import './LawyerContainer.css'
-
+import {useNavigate} from 'react';
 export const LawyerContainer=()=> {
     const lawyer=useSelector((state)=>state.lawyer);
 

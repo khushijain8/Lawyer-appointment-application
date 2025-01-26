@@ -2,10 +2,10 @@ import React, { useEffect } from 'react'
 import { fetchLawyers,bookSlot,selectSlot } from '../../redux/Lawyer/lawyerSlice'
 import { useDispatch ,useSelector} from 'react-redux'
 import './LawyerContainer.css'
-
+import {useNavigate} from 'react';
 export const LawyerContainer=()=> {
     const lawyer=useSelector((state)=>state.lawyer);
-
+    const navigate=useNavigate();
     const dispatch=useDispatch();
     useEffect(()=>{
         dispatch(fetchLawyers());
@@ -15,7 +15,9 @@ export const LawyerContainer=()=> {
         dispatch(selectSlot({ lawyerId, slotIndex }));
         dispatch(bookSlot());
       };
-    
+    const handleClick =()=>{
+        navigate('/lawyerdetail/');
+    }
     return (
         <div>
         <h2>LIST OF LAWYERS</h2>
@@ -46,7 +48,7 @@ export const LawyerContainer=()=> {
                    </li>
                  ))}
                </ul>
-            
+               <button className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" onClick={handleClick(lawyer.id)} >Book</button>
              </div>
            ))}
          </div>
