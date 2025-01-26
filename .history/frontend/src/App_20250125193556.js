@@ -1,0 +1,31 @@
+import './App.css';
+
+import {Route,Routes} from 'react-router-dom';
+import Signup from './components/Signup/Signup';
+import {Login} from './components/Login/Login';
+import Navbar from './components/Navbar/Navbar';
+import Book from './components/Book/Book';
+import Admin from './components/Admin/Admin'
+import FrontPage from './components/FrontPage/FrontPage';
+import Firm1 from './components/Firms/Firm1';
+import Firm2 from './components/Firms/Firm2';
+
+function App() {
+  return (
+    <>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/book' element={<Book/>}/>
+        <Route path='/' element={<FrontPage/>}/>
+        <Route path='/admin' element={<Admin/>}/>
+        <Route path='/firm1' element={<Firm1/>}/>
+        <Route path='/firm2' element={<Firm2/>}/>
+      </Routes> 
+    
+    </>
+  );
+}
+
+export default App;

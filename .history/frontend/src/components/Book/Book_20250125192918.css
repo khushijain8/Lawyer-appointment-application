@@ -1,0 +1,7 @@
+.root-div {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Make the div take the full height of the viewport */
+    text-align: center;      /* Ensure text is centered inside buttons */
+  }

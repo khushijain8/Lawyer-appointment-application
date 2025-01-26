@@ -1,0 +1,6 @@
+.root-div {
+    display: grid;
+    place-items: center;  /* Center both horizontally and vertically */
+    height: 100vh;        /* Make the div take the full height of the viewport */
+    text-align: center;   /* Ensure text is centered inside buttons */
+  }
